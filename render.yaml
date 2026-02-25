@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: medicine-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8502077315:AAFsAdWXuo_06YGCjwyAI11JbgCWH8Y3pso
+      - key: BOT_PASSWORD
+        value: 0918
